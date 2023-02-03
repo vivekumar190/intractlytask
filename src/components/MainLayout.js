@@ -33,7 +33,11 @@ const MainLayout = () => {
                 // light={true}
                 controls={true}
                 playing={true}
-                muted={true}
+                muted={
+                  selected.url === "https://www.youtube.com/watch?v=HkGMT0Wwk48"
+                    ? true
+                    : false
+                }
                 config={{ youtube: { playerVars: { disablekb: 1 } } }}
                 // playIcon={
                 //   <img
