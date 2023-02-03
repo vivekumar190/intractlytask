@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
 .App {
   text-align: center;
 }
@@ -35,4 +36,183 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/**/
+.mainwrapper {
+  height: 100vh;
+}
+
+.player-wrapper {
+  position: relative;
+  width: auto;
+  height: auto;
+  /* object-fit: cover; */
+  /* transform: translate(-50%, -50%);
+  transition-delay: 1s; */
+  transition: width 2s;
+}
+
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  object-fit: cover !important;
+}
+.playicon {
+  position: absolute;
+  align-self: center;
+  top: 50%;
+  right: 50%;
+}
+.react-player > video {
+  position: absolute;
+  object-fit: cover !important;
+}
+
+/* .player-wrapper {
+  width: auto;
+  height: auto;
+}
+.react-player {
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.react-player > div {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  zoom: 50;
+} */
+.buttongroup {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: fit-content;
+  /* font-family: "DM Sans";
+  font-size: 24px;
+  font-weight: 500; */
+  height: auto;
+  transition: width 2s;
+}
+.button {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+  padding: 10px 16px;
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  border-radius: 30px;
+  background-color: rgba(17, 17, 17, 0.1);
+}
+.button:hover {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+  padding: 10px 16px;
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 30px;
+  background-color: rgba(17, 17, 17, 0.1);
+  border-width: 1px;
+  border-color: rgb(162, 77, 241);
+  border-style: solid;
+}
+.circle {
+  display: flex;
+  font-family: "DM Sans";
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  background: rgb(125, 0, 254);
+  font-weight: 500;
+  height: 28px;
+  width: 28px;
+  border-radius: 100px;
+  color: rgb(255, 255, 255);
+}
+.buttoncontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.secondStepbutton {
+  background: rgb(125, 0, 254);
+  font-size: 18px;
+  background: rgb(125, 0, 254);
+  font-weight: 600;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 16px;
+  max-width: 332px;
+  border: none;
+}
+.formcontainer {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+  transition: height 2s;
+}
+.formbody {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 18px;
+  color: black;
+  font-weight: 600;
+}
+.input {
+  border-color: #a5a5a5;
+  border-width: 0px 0px 2px 0px;
+  outline: none;
+  width: 100%;
+}
+.input:focus {
+  border-color: #000000;
+  border-width: 0px 0px 2px 0px;
+  outline: none;
+}
+.checkbox {
+  background-color: #282c34;
+  border-color: #000000;
+  border-radius: 2px;
+  border-width: 2px;
+  height: 30px;
+  width: 30px;
+}
+.tandc {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  font-size: 18px;
+  color: rgb(173, 173, 173);
+  font-weight: 600;
+  text-align: left;
+}
+.fomrbutton {
+  background: rgb(125, 0, 254);
+  font-size: 18px;
+  background: rgb(125, 0, 254);
+  font-weight: 600;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 16px;
+  width: 100%;
+  border: none;
+  box-shadow: rgb(0 0 0 / 10%) 0px 10px 30px 0px;
+  padding: 20px;
+  height: 68px;
 }
